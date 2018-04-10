@@ -10,7 +10,7 @@ import Actions from 'actions/monitor/MonitorActions'
 
 import Inconsistent from 'components/helpers/Inconsistent'
 
-import Hint from 'components/Layouts/Hint'
+import Hint from 'components/layouts/Hint'
 
 class One extends React.Component {
   constructor(props) {
@@ -21,7 +21,7 @@ class One extends React.Component {
     const result = Inconsistent.GetPassword()
 
     //Does "Actions.ini" exist? Is it spelled right?
-    Actions.ini(
+    Actions.init(
       {
         result
       }
